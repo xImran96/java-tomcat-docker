@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Create Tomcat Docker Image') {
             steps{
-                sh 'docker build -t ximran96/tomcatsamplewebapp .'
+                sh 'docker build . -t tomcatsamplewebapp:${BUILD_NUMBER}'
 
             }
         }

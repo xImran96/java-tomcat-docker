@@ -1,4 +1,4 @@
 FROM tomcat:9
-ADD http://localhost:9090/job/Build_Docker_Image/12/*.war  /usr/local/tomcat/webapps/
+ADD http://172.31.208.1:9090/job/Build_Docker_Image/13/*.war  /usr/local/tomcat/webapps/
 EXPOSE 8050
 CMD ["catalina.sh", "run"]
